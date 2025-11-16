@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Advice Generator App Solution](https://your-solution-url.com)
-- Live Site URL: [Advice Generator App Live](https://your-live-site-url.com)
+- Solution URL: [Advice Generator App Solution](https://www.frontendmentor.io/solutions/advice-generator-using-html-css-javascript-tailwind-css-and-api-gDuoVoqzg7)
+- Live Site URL: [Advice Generator App Live](https://advice-generator-senn.vercel.app/)
 
 ## My process
 
