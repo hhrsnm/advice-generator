@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Advice Slip Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="bg-(--color-blue-900) max-w-[500px] py-8 px-4 mx-4 mb-10 rounded-lg relative sm:px-6">
+        <!-- header advice id -->
+        <header class="mb-5">
+            <p id="advice-number" class="text-(--color-green-300) text-xs uppercase text-center tracking-[0.25em]">
+                ADVICE #<span id="advice-id">000</span>
+            </p>
+        </header>
+
+        <!-- advice text -->
+        <blockquote class="mb-5" cite="https://api.adviceslip.com/advice">
+            <p id="advice-text"
+                class="text-center text-(length:--font-xl) text-(--color-blue-200) text-wrap before:content-['“'] after:content-['”']">
+                It always seems impossible until it is done.
+            </p>
+        </blockquote>
+
+        <!-- divider and change advice button -->
+        <footer class="flex justify-center">
+            <!-- divider -->
+            <div class="mb-5">
+                <!-- desktop divider -->
+                <svg class="hidden sm:block" width="444" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
+                        <g transform="translate(212)" fill="#CEE3E9">
+                            <rect width="6" height="16" rx="3" />
+                            <rect x="14" width="6" height="16" rx="3" />
+                        </g>
+                    </g>
+                </svg>
+
+                <!-- mobile divider -->
+                <svg class="block sm:hidden" width="295" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z" />
+                        <g transform="translate(138)" fill="#CEE3E9">
+                            <rect width="6" height="16" rx="3" />
+                            <rect x="14" width="6" height="16" rx="3" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            
+            <!-- button -->
+            <button  aria-label="Get another advice" onclick="displayAdvice()"
+                class="bg-(--color-green-300) p-5 rounded-full absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 hover:shadow-[0_0_30px_var(--color-green-300)] cursor-pointer transition-shadow">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+                        fill="#202733" />
+                </svg>
+            </button>
+        </footer>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
